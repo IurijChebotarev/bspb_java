@@ -1,8 +1,8 @@
-package lessonFour.Objects;
+package lessonFour.objects;
 
 import java.util.Objects;
 
-public class IP extends Clients {
+public class IP extends Client {
 
     private long ogrnCode;
 
@@ -36,7 +36,7 @@ public class IP extends Clients {
 
     @Override
     public String toString() {
-        return "Clients{" + "name='" + super.getName() + "'" + ", age='" + super.getAge() + "'" + ", sex='" + ogrnCode + "'" + "}";
+        return "Clients{" + "name='" + super.getName() + "'" + ", age='" + super.getAge() + "'" + ", ogrnCode='" + ogrnCode + "'" + "}";
     }
 }
 

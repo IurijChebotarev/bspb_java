@@ -1,10 +1,10 @@
-package lessonFour.Objects;
+package lessonFour.objects;
 
-import lessonFour.Enums.Sex;
+import lessonFour.enums.Sex;
 
 import java.util.Objects;
 
-public class Fiz extends Clients {
+public class Fiz extends Client {
 
     private Sex sex;
 

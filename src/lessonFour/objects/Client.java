@@ -1,14 +1,14 @@
-package lessonFour.Objects;
+package lessonFour.objects;
 
 
 import java.util.Objects;
 
-public abstract class Clients implements Comparable<Clients> {
+public abstract class Client implements Comparable<Client> {
 
     private String name;
     private int age;
 
-    public Clients(String name, int age) {
+    public Client(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -30,9 +30,6 @@ public abstract class Clients implements Comparable<Clients> {
     }
 
     @Override
-    public abstract boolean equals(Object o);
-
-    @Override
     public int hashCode() {
         return Objects.hash(getName(), getAge());
     }
@@ -41,14 +38,8 @@ public abstract class Clients implements Comparable<Clients> {
     public abstract String toString();
 
     @Override
-    public int compareTo(Clients o) {
-        if (this.age > o.age) {
-            return +1;
-        } else if (this.age == o.age) {
-            return 0;
-        } else {
-            return -1;
-        }
+    public int compareTo(Client o) {
+        return Integer.compare(this.age, o.age);
     }
 }
 
